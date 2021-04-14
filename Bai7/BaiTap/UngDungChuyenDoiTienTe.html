@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <th><label for="Amount" name="amount" value="Amount">Amout</label></th>
+            <th><label for="From" name="From" value="Form">From Currency</label></th>
+            <th><label for="To" name="To" value="To">To Currency</label></th>
+        </tr>
+            <td><input type="number" id="Amount"></td>
+            <td>
+                <select name="From Currency" id="From">
+                    <option value="VND">Việt Nam Đồng</option>
+                    <option value="Yen">Yên</option>
+                    <option value="Te">Tệ</option>
+                    <option value="DolaMy">Đô la Mĩ</option>
+                    <option value="DolaUc">Đô la Úc</option>
+                    <option value="Euro">Euro</option>
+                </select>
+            </td>
+            <td>
+                <select name="To Currency" id="To">
+                    <option value="VND">Việt Nam Đồng</option>
+                    <option value="Yen">Yên</option>
+                    <option value="Te">Tệ</option>
+                    <option value="DolaMy">Đô la Mĩ</option>
+                    <option value="DolaUc">Đô la Úc</option>
+                    <option value="Euro">Euro</option>
+                </select>
+            </td>
+    </table>
+    <p>
+        <input type="button" onclick="chuyen()" value="convert">
+    </p>
+    <p id="kq"></p>
+<script>
+    function chuyen()
+    {
+        var fr = document.getElementById("From").value;
+        var to = document.getElementById("To").value;
+        var amount = document.getElementById("Amount").value;
+        amount = parseFloat(amount);
+        var result = 0;
+        if (fr == "VND" && to == "Yen") {
+            result = amount * 0.0047;
+        } else {
+            if (fr == "VND" && to == "Te") {
+                result = amount * 0.00028;
+            } else {
+                if (fr == "VND" && to == "DolaMy") {
+                    result = amount * 0.000043;
+                }else {
+                    if (fr == "VND" && to == "DolaUc") {
+                        result = amount * 0.000056;
+                    } else {
+                        if (fr == "VND" && to == "Euro") {
+                            result = amount * 0.000036;
+                        } else {
+                            if (fr == "VND" && to == "VND") {
+                                result = amount * 1;
+                            } else {
+                                if (fr == "Yen" && to == "VND") {
+                                    result = amount * 211.81;
+                                } else {
+                                    if (fr == "Yen" && to == "DolaMy") {
+                                        result = amount * 0.0092;
+                                    } else {
+                                        if (fr == "Yen" && to == "DolaUc") {
+                                            result = amount * 0.012;
+                                        } else {
+                                            if (fr == "Yen" && to == "Euro") {
+                                                result = amount * 0.0077;
+                                            } else {
+                                                if (fr == "Yen" && to == "Te") {
+                                                    result = amount * 0.06;
+                                                } else {
+                                                    if (fr == "Yen" && to == "Yen") {
+                                                        result = amount * 1;
+                                                    } else {
+                                                        if (fr == "DolaMy" && to == "VND") {
+                                                            result = amount * 23079.43;
+                                                        } else {
+                                                            if (fr == "DolaMy" && to == "Yen") {
+                                                                result = amount * 10897;
+                                                            } else {
+                                                                if (fr == "DolaMy" && to == "DolaMy") {
+                                                                    result = amount * 1;
+                                                                } else {
+                                                                    if (fr == "DolaMy" && to == "DolaUc") {
+                                                                        result = amount * 1.3;
+                                                                    } else {
+                                                                        if (fr == "DolaMy" && to == "Te") {
+                                                                            result = amount * 6.53;
+                                                                        } else {
+                                                                            if (fr == "DolaMy" && to == "Euro") {
+                                                                                result = amount * 0.84;
+                                                                            } else {
+                                                                                if (fr == "DolaUc" && to == "VND") {
+                                                                                    result = amount * 17740.35;
+                                                                                } else {
+                                                                                    if (fr == "DolaUc" && to == "Yen") {
+                                                                                        result = amount * 83.74;
+                                                                                    } else {
+                                                                                        if (fr == "DolaUc" && to == "DolaUc") {
+                                                                                            result = amount * 1;
+                                                                                        } else {
+                                                                                            if (fr == "DolaUc" && to == "DolaMy") {
+                                                                                                result = amount * 0.77;
+                                                                                            } else {
+                                                                                                if (fr == "DolaUc" && to == "Te") {
+                                                                                                    result = amount * 5.02;
+                                                                                                } else {
+                                                                                                    if (fr == "DolaUc" && to == "Euro") {
+                                                                                                        result = amount * 0.64;
+                                                                                                    } else {
+                                                                                                        if (fr == "Te" && to == "Yen") {
+                                                                                                            result = amount * 16.68;
+                                                                                                        } else {
+                                                                                                            if (fr == "Te" && to == "VND") {
+                                                                                                                result = amount * 3533.29;
+                                                                                                            } else {
+                                                                                                                if (fr == "Te" && to == "DolaMy") {
+                                                                                                                    result = amount * 0.15;
+                                                                                                                } else {
+                                                                                                                    if (fr == "Te" && to == "DolaUc") {
+                                                                                                                        result = amount * 0.2;
+                                                                                                                    } else {
+                                                                                                                        if (fr == "Te" && to == "Euro") {
+                                                                                                                            result = amount * 0.13;
+                                                                                                                        } else {
+                                                                                                                            if (fr == "Te" && to == "Te") {
+                                                                                                                                result = amount * 1;
+                                                                                                                            } else {
+                                                                                                                                if (fr == "Euro" && to == "Yen") {
+                                                                                                                                    result = amount * 214;
+                                                                                                                                } else {
+                                                                                                                                    if (fr == "Euro" && to == "VND") {
+                                                                                                                                        result = amount * 27612.74;
+                                                                                                                                    } else {
+                                                                                                                                        if (fr == "Euro" && to == "DolaMy") {
+                                                                                                                                            result = amount * 1.2;
+                                                                                                                                        } else {
+                                                                                                                                            if (fr == "Euro" && to == "DolaUc") {
+                                                                                                                                                result = amount * 1.56;
+                                                                                                                                            } else {
+                                                                                                                                                if (fr == "Euro" && to == "Te") {
+                                                                                                                                                    result = amount * 7.81;
+                                                                                                                                                } else {
+                                                                                                                                                    if (fr == "Euro" && to == "Euro") {
+                                                                                                                                                        result = amount * 1;
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            }
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        // Cách 2:
+        // if (fr == "VND")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 1;break;
+        //         case "Yen":result = amount * 0.0047;break;
+        //         case "Te":result = amount * 0.00028;break;
+        //         case "DolaMy":result = amount * 0.000043;break;
+        //         case "DolaUc":result = amount * 0.000056;break;
+        //         case "Euro":result = amount * 0.000036;break;
+        //     }
+        // }
+        // if (fr == "Yen")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 211.81;break;
+        //         case "Yen":result = amount * 1;break;
+        //         case "Te":result = amount * 0.06;break;
+        //         case "DolaMy":result = amount * 0.0092;break;
+        //         case "DolaUc":result = amount * 0.012;break;
+        //         case "Euro":result = amount * 0.0077;break;
+        //     }
+        // }
+        // if (fr == "Te")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 3533.39;break;
+        //         case "Yen":result = amount * 16.68;break;
+        //         case "Te":result = amount * 1;break;
+        //         case "DolaMy":result = amount * 0.15;break;
+        //         case "DolaUc":result = amount * 0.2;break;
+        //         case "Euro":result = amount * 0.13;break;
+        //     }
+        // }
+        // if (fr == "DolaUc")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 17740.35;break;
+        //         case "Yen":result = amount * 83.74;break;
+        //         case "Te":result = amount * 05.02;break;
+        //         case "DolaMy":result = amount * 0.77;break;
+        //         case "DolaUc":result = amount * 1;break;
+        //         case "Euro":result = amount * 0.64;break;
+        //     }
+        // }
+        // if (fr == "DolaMy")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 23079.43;break;
+        //         case "Yen":result = amount * 10897;break;
+        //         case "Te":result = amount * 6.53;break;
+        //         case "DolaMy":result = amount * 1;break;
+        //         case "DolaUc":result = amount * 1.3;break;
+        //         case "Euro":result = amount * 0.84;break;
+        //     }
+        // }
+        // if (fr == "Euro")
+        // {
+        //     switch (to)
+        //     {
+        //         case "VND":result = amount * 27612.74;break;
+        //         case "Yen":result = amount * 214;break;
+        //         case "Te":result = amount * 0.06;break;
+        //         case "DolaMy":result = amount * 1.2;break;
+        //         case "DolaUc":result = amount * 1.56;break;
+        //         case "Euro":result = amount * 1;break;
+        //     }
+        // }
+        document.getElementById("kq").innerHTML = result;
+    }
+</script>
+</body>
+</html>
