@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <th colspan="2">
+                <input type="number" id="sothu1">
+            </th>
+            <th colspan="2">
+                <input type="number" id="sothu2">
+            </th>
+        </tr>
+        <tr>
+            <td><strong><input type="button" onclick="tong()" value="Addition(+)" name="aaaa"></strong></td>
+            <td><strong><input type="button" onclick="hieu()" value="Subtraction(-)" name="aaaa"></strong></td>
+            <td><strong><input type="button" onclick="tich()" value="Multiplication(X)" name="aaaa"></strong></td>
+            <td><strong><input type="button" onclick="thuong()" value="Division(/)" name="aaaa"></strong></td>
+        </tr>
+    </table>
+</form>
+<p id="kq">Kết quả là: </p>
+</body>
+</html>
+<script>
+    function tong() {
+        let so1=parseFloat(document.getElementById("sothu1").value);
+        let so2=parseFloat(document.getElementById("sothu2").value);
+        var result=0;
+        result=so1+so2;
+        document.getElementById("kq").innerHTML=result;
+    }
+    function hieu() {
+        let so1=parseFloat(document.getElementById("sothu1").value);
+        let so2=parseFloat(document.getElementById("sothu2").value);
+        var result=0;
+        result=so1-so2;
+        document.getElementById("kq").innerHTML=result;
+    }
+    function tich() {
+        let so1=parseFloat(document.getElementById("sothu1").value);
+        let so2=parseFloat(document.getElementById("sothu2").value);
+        var result=0;
+        result=so1*so2;
+        document.getElementById("kq").innerHTML=result;
+    }
+    function thuong() {
+        let so1=parseFloat(document.getElementById("sothu1").value);
+        let so2=parseFloat(document.getElementById("sothu2").value);
+        var result=0;
+        result=so1/so2;
+        document.getElementById("kq").innerHTML=result;
+    }
+
+</script>
