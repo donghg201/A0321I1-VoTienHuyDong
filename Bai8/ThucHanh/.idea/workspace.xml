@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1524eceb-f757-45c8-af7d-17a3fc21c0de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LuyenTapCauTrucSwitchCase/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LuyenTapCauTrucIfElseIf.html" beforeDir="false" afterPath="$PROJECT_DIR$/LuyenTapCauTrucIfElseIf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618540730648</updated>
-      <workItem from="1618540731999" duration="7367000" />
+      <workItem from="1618540731999" duration="8255000" />
     </task>
     <servers />
   </component>
