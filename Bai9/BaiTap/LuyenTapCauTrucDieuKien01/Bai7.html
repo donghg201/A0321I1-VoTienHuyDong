@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập số mức dùng của hộ gia đình');
+    a = parseInt(a);
+    if (a < 10)
+    {
+        alert('Không có cước');
+    }else if (a >= 10 && a <100)
+    {
+        alert('Cước phí 1%');
+    }else if (a >= 100 && a < 1000)
+    {
+        alert('Cước phí 5%');
+    }else alert('Cước phí 10%');
+</script>
+</body>
+</html>

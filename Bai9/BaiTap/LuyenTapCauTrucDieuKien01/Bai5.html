@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập số học sinh');
+    for (i = 1; i <= a ; i++)
+    {
+        let tenhocsinh = prompt('Nhập tên học sinh thứ ' + 'i');
+        let diemhe1 = prompt('Nhập điểm bài kiểm tra học sinh');
+        diemhe1 = parseInt(diemhe1);
+        let diemhe2 = prompt('Nhập điểm thi giữa kỳ');
+        diemhe2 = parseInt(diemhe2);
+        let diemhe3 = prompt('Nhập điểm thi cuối kỳ');
+        diemhe3 = parseInt(diemhe3);
+        let dtb = (diemhe1 + diemhe2*2 + diemhe3*3)/6;
+        dtb = (parseInt(dtb));
+        alert('Điểm trung bình của học sinh ' + tenhocsinh + ' là: ' + dtb);
+        if (dtb >= 8)
+        {
+            alert('Học sinh ' + tenhocsinh + ' đạt loại Giỏi');
+        }else if (dtb >= 6.5 && dtb < 8)
+        {
+            alert('Học sinh ' + tenhocsinh + ' đạt loại Khá');
+        }else if (dtb >= 5 && dtb < 6.5)
+        {
+            alert('Học sinh ' + tenhocsinh + ' đạt loại Trung bình');
+        }else alert('Học sinh ' + tenhocsinh + ' học lại');
+    }
+</script>
+</body>
+</html>
