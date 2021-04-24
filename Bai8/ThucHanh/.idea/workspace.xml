@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1524eceb-f757-45c8-af7d-17a3fc21c0de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LuyenTapCauTrucIfElseIf.html" beforeDir="false" afterPath="$PROJECT_DIR$/LuyenTapCauTrucIfElseIf.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +27,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Bai9" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -44,10 +45,21 @@
       <option name="presentableId" value="Default" />
       <updated>1618540730648</updated>
       <workItem from="1618540731999" duration="8255000" />
+      <workItem from="1618828682024" duration="4775000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1061" y="272" key="FileChooserDialogImpl" timestamp="1618833486812">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="1061" y="272" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1618833486812" />
+    <state x="943" y="221" width="672" height="678" key="search.everywhere.popup" timestamp="1618833461054">
+      <screen x="0" y="0" width="1707" height="1027" />
+    </state>
+    <state x="943" y="221" width="672" height="678" key="search.everywhere.popup/0.0.1707.1027@0.0.1707.1027" timestamp="1618833461054" />
   </component>
 </project>
