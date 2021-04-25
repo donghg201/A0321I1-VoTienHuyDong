@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập a');
+    a = parseInt(a);
+    var b = prompt('Nhập b');
+    b = parseInt(b);
+    var c = prompt('Nhập c');
+    c = parseInt(c);
+    var delta;
+        dealta = parseInt(delta);
+    delta = (b * b) - (4 * a * c);
+    if (a == 0)
+    {
+        if (b != 0)
+        {
+            x = -c / b;
+            alert('Phương trình có nghiệm là: ' + x);
+        } else if (b == 0 && c == 0)
+        {
+            alert('Phương trình vô số nghiệm');
+        } else alert('Phương trình vô nghiệm');
+    }else if (a != 0) {
+        if (delta < 0) {
+            alert('Phương trình vô nghiệm');
+        } else if (delta == 0) {
+            alert('Phương trình có nghiệm kép: x1 = x2 = ' + (-b / (2 * a)));
+        } else if (delta > 0) {
+            alert('Phương trình có 2 nghiệm: x1 = ' + Math.ceil(((-b + Math.sqrt(delta)) / 2 * a)) + ' x2 = ' + Math.ceil((- b - Math.sqrt(delta)) / 2 * a));
+        };
+    };
+</script>
+</body>
+</html>

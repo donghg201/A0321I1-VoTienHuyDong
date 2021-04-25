@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập số tiền ban đầu đơn vị triệu đồng');
+    a = parseInt(a);
+    var b = prompt('Nhập số tháng');
+    b = parseInt(b);
+    var c = (a * (Math.pow(1 + 0.06 / 12 , b))) - a ;
+    alert('Số tiền lãi của ' + b + ' tháng là: ' + Math.round(c) + ' triệu đồng');
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập thu nhập cá nhân');
+    a = parseInt(a);
+    if (a < 1000000)
+    {
+        alert('Thuế thu nhập cá nhân là 0%: 0 đồng');
+    }
+    else if (a >= 1000000 && a < 5000000)
+    {
+        alert('Thuế thu nhập cá nhân là 5%: ' + a*5/100 + ' đồng');
+    } else
+        alert('Thuế thu nhập cá nhân là 10%: ' + a*10/100 + ' đồng');
+</script>
+</body>
+</html>

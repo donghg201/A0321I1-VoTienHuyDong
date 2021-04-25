@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Nhập số a');
+    a = parseFloat(a);
+    var b = prompt('Nhập số b');
+    b = parseFloat(b);
+    var c = prompt('Nhập số c');
+    c = parseFloat(c);
+    while (a < 0 || b < 0 || c < 0)
+    {
+        alert('Nhập lại a, b, c');
+        a = prompt('Nhập lại a');
+        b = prompt('Nhập lại b');
+        c = prompt('Nhập lại c');
+    }
+    if (a + b > c || b + c < a || c + a < b)
+    {
+        alert('a, b, c là ba cạnh của 1 tam giác')
+    }
+    else alert('a, b, c không là ba cạnh của một tam giác');
+</script>
+</body>
+</html>
