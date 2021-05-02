@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7d57d89-499e-47d2-9bfb-9eb02718c91d" name="Default Changelist" comment="" />
+    <list default="true" id="fb24ae69-dd55-43cb-af70-f8e35ff92b00" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/GamePuzzle/Gamepuzzle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Bai10/ThucHanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Bai10/ThucHanh/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1rfLMXmow4hKZqOoz6NdecRC9fF" />
+  <component name="ProjectId" id="1rhfLXOCiTioBi7ktT9dWWA7hnu" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -25,6 +28,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -34,23 +38,16 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d7d57d89-499e-47d2-9bfb-9eb02718c91d" name="Default Changelist" comment="" />
-      <created>1619362149108</created>
+      <changelist id="fb24ae69-dd55-43cb-af70-f8e35ff92b00" name="Default Changelist" comment="" />
+      <created>1619433186031</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619362149108</updated>
-      <workItem from="1619362150364" duration="1332000" />
-      <workItem from="1619365881872" duration="625000" />
+      <updated>1619433186031</updated>
+      <workItem from="1619433187367" duration="1328000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="834" y="459" key="FileChooserDialogImpl" timestamp="1619366601888">
-      <screen x="0" y="0" width="1707" height="1027" />
-    </state>
-    <state x="834" y="459" key="FileChooserDialogImpl/0.0.1707.1027@0.0.1707.1027" timestamp="1619366601888" />
   </component>
 </project>

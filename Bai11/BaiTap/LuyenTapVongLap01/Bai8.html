@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  <input onclick="choi()" type="button" value="Chơi">
+  <input onclick="choilai()" type="button" value="Chơi lại">
+    <style>
+        body
+        {
+            width:400px;
+            margin:450px auto;
+        }
+        button
+        {
+            width: 400px;
+            height: 100px;
+            font: -apple-system-caption1;
+            background: deepskyblue;
+            color: black;
+        }
+    </style>
+    <script>
+        function choi() {
+            let khoangtren = parseInt(prompt('Nhập vào khoảng trên người dùng muốn đoán'));
+            let khoangduoi = parseInt(prompt('Nhập vào khoảng dưới người dùng muốn đoán'));
+            let sorandom = parseInt(Math.floor(Math.random() * (khoangtren - khoangduoi)) + khoangduoi);
+            alert(sorandom);
+            let doan = parseInt(prompt('Nhập vào giá trị người dùng đoán'));
+            while (doan > khoangtren || doan < khoangduoi) {
+                doan = parseInt(prompt('Nhập lại giá trị muốn đoán'));
+            }
+            if (doan == sorandom) {
+                alert('Chúc mừng người chơi đã đoán đúng');
+            }
+            if (doan != sorandom)
+            {
+                for (let i = 1 ; i < 3 ; )
+                {
+                    if (doan - sorandom > 0)
+                    {
+                        alert('Số người dùng đoán lớn hơn');
+                    }
+                    else alert('Số người dùng đoán bé hơn');
+                    doan = parseInt(prompt('Nhập lại giá trị muốn đoán'));
+                    if (doan == sorandom)
+                    {
+                        alert('Chúc mừng người chơi đã đoán đúng');
+                        break;
+                    }
+                    if (doan != sorandom)
+                    {
+                        alert('Người chơi đoán không đúng.')
+                    }
+                    i++;
+                }
+            }
+        }
+        function choilai()
+        {
+            location.reload();
+        }
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = 0;
+  let a1 = 1;
+  let a2 = 0;
+  for (let i = 1 ; ;)
+  {
+    a = a1 + a2;
+    a1 = a2;
+    a2 = a;
+    document.write('Số Fibonanci thứ ' + i +': ' + a + '<br>');
+    if(a % 5 == 0)
+    {
+      document.write(a + ' là số Fibonanci đầu tiên chia hết cho 5');
+      break;
+    }
+    i++;
+  }
+</script>
+</body>
+</html>

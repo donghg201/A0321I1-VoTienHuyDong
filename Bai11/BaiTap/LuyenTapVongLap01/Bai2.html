@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = prompt('Nhiệt độ');
+  // if (a < 20 && a > 100)
+  // {
+  //   while (a < 20 )
+  //   {
+  //     alert('Hãy tăng nhiệt độ');
+  //     a = prompt('Nhập lại nhiệt độ');
+  //   }
+  // } else
+  // {
+  //   while (a > 100 )
+  //   {
+  //     alert('Hãy giảm nhiệt độ');
+  //     a = prompt('Nhập lại nhiệt độ');
+  //   }
+  // }
+  while (a < 20 || a > 100)
+  {
+    if (a < 20)
+    {
+      alert('Hãy tăng nhiệt độ');
+      a = prompt('Nhập lại nhiệt độ');
+    }
+    if (a > 100)
+    {
+      alert('Hãy giảm nhiệt độ');
+      a = prompt('Nhập lại nhiệt độ');
+    }
+  }
+</script>
+</body>
+</html>

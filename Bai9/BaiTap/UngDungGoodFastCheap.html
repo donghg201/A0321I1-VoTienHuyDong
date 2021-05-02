@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div>
+  <input onclick="change1()" name="range" id="range1" value="0" type="range" min="0" max="1" style="width: 50px"><label>Good</label> <br>
+  <input onclick="change2()" name="range" id="range2" value="0" type="range" min="0" max="1" style="width: 50px"><label>Cheap</label><br>
+  <input onclick="change3()" name="range" id="range3" value="0" type="range" min="0" max="1" style="width: 50px"><label>Fast</label><br>
+</div>
+<script>
+  let range1 = document.getElementById("range1");
+  let range2 = document.getElementById("range2");
+  let range3 = document.getElementById("range3");
+  function change1() {
+    if (range1.value == 1) {
+      if (range2.value == 1) {
+        range3.value = 0;
+      } else if (range3.value == 1) {
+        range2.value = 0;
+      }
+    } else {
+      range2.value = 1;
+      range3.value = 1;
+    }
+  }
+  function change2() {
+    if (range2.value == 1) {
+      if (range3.value == 1) {
+        range1.value = 0;
+      } else if (range1.value == 1) {
+        range3.value = 0;
+      }
+    } else {
+      range3.value = 1;
+      range1.value = 1;
+    }
+  }
+  function change3() {
+    if (range3.value == 1) {
+      if (range1.value == 1) {
+        range2.value = 0;
+      } else if (range2.value == 1) {
+        range1.value = 0;
+      }
+    } else {
+      range2.value = 1;
+      range1.value = 1;
+    }
+  }
+</script>
+</body>
+</html>
