@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số lượng số Fibonaci muốn hiện'));
+    let so1 = 1;
+    let so2 = 0;
+    let so = 0;
+    for (i = 0 ; i <= a;)
+    {
+        so = so1 + so2;
+        so1 = so2;
+        so2 = so;
+        document.write(so + ' ');
+        i++;
+    }
+</script>
+</body>
+</html>
