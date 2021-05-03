@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
-
+<script>
+    let a = parseInt(prompt('Nhập số tiền ban đầu'));
+    let b = parseInt(prompt('Nhập số tháng'));
+    let c = parseInt(prompt('Nhập lãi suất theo tháng'));
+    let tonglai = 0, d = 0;
+    for (let i = 1; i <= b ; i++)
+    {
+         d = a * c / 100;
+         tonglai = tonglai + d;
+         a = a + d;
+    }
+    alert('Số tiền lãi sau khi vay ' + b + ' tháng là: ' + Math.round(tonglai));
+</script>
 </body>
 </html>
