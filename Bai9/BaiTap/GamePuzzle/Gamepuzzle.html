@@ -5,23 +5,121 @@
     <title>Title</title>
 </head>
 <body>
-<div class="puzzles">
-    {
-    <img id="img1" src="Ảnh/gấu 1.jpg" onclick="mot" style="box-shadow: black 2px 3px 3px"></img>
-    <img id="img2" src="Ảnh/mèo 2.jpg" onclick="hai" style="box-shadow: black 2px 3px 3px"></img>
-    <img id="img3" src="Ảnh/gấu 3.jpg" onclick="ba" style="box-shadow: black 2px 3px 3px"></img>
-    <img id="img4" src="Ảnh/mèo 4.jpg" onclick="bon" style="box-shadow: black 2px 3px 3px"></img>
-    <img id="img5" src="Ảnh/khỉ 5.jpg" onclick="nam" style="box-shadow: black 2px 3px 3px"></img>
-    }
+<div class="puzzles" onclick="check()" id="done">
+    <img id="img1" src="" alt="" onclick="change1()"/><br>
+    <img id="img2" src="" alt="" onclick="change2()"/><br>
+    <img id="img3" src="" alt="" onclick="change3()"/><br>
+    <img id="img4" src="" alt="" onclick="change4()"/><br>
+    <img id="img5" src="" alt="" onclick="change5()"/>
 </div>
 <script>
-    class mot()
-    {
-        let random = Math.random() * 3;
-        src="Ảnh/gấu 1.jpg" height="79" width="304",
-        src="Ảnh/khỉ 1.jpg" height="160" width="800"
-        src="Ảnh/mèo 1.jpg" height="160" width="800"
+    var anh1 = [
+        "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+    ];
+    let random1 = Math.round(Math.random() * 2);
+    document.getElementById("img1").src = anh1[random1];
+
+    function change1() {
+        random1++;
+        if (random1 == 3) {
+            random1 = 0;
+        }
+        document.getElementById("img1").src = anh1[random1];
     }
-</script>
+    var anh2 = [
+        "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+    ];
+        let random2 = Math.round(Math.random() * 2);
+        document.getElementById("img2").src = anh2[random2];
+
+        function change2() {
+            random2++;
+            if (random2 == 3) {
+                random2 = 0;
+            }
+            document.getElementById("img2").src = anh2[random2];
+        }
+    var anh3 = [
+        "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+    ];
+            let random3 = Math.round(Math.random() * 2);
+            document.getElementById("img3").src = anh3[random3];
+
+            function change3() {
+                random3++;
+                if (random3 == 3) {
+                    random3 = 0;
+                }
+                document.getElementById("img3").src = anh3[random3];
+            }
+    var anh4 = [
+        "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+    ];
+                let random4 = Math.round(Math.random() * 2);
+                document.getElementById("img4").src = anh4[random4];
+
+                function change4() {
+                    random4++;
+                    if (random4 == 3) {
+                        random4 = 0;
+                    }
+                    document.getElementById("img4").src = anh4[random4];
+                }
+    var anh5 = [
+        "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg",
+        "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg"
+    ];
+                let random5 = Math.round(Math.random() * 2);
+                document.getElementById("img5").src = anh5[random5];
+                function change5() {
+                    random5++;
+                    if (random5 == 3) {
+                        random5 = 0;
+                    }
+                    document.getElementById("img5").src = anh5[random5];
+                }
+    function check() {
+        if ((document.getElementById("img1").src ==="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part1x1.jpg"
+            && document.getElementById("img2").src ==="https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part2x1.jpg"
+            && document.getElementById("img3").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part3x1.jpg"
+            && document.getElementById("img4").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part4x1.jpg"
+            && document.getElementById("img5").src === "https://demo.codegym.vn/8/puzzlegame/img/funny-cat1_part5x1.jpg")
+            ||
+            (document.getElementById("img1").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part1x1.jpg"
+                && document.getElementById("img2").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part2x1.jpg"
+                && document.getElementById("img3").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part3x1.jpg"
+                && document.getElementById("img4").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part4x1.jpg"
+                && document.getElementById("img5").src === "https://demo.codegym.vn/8/puzzlegame/img/panda_swap_part5x1.jpg")
+            ||
+            (document.getElementById('img1').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part1x1.jpg"
+                && document.getElementById('img2').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part2x1.jpg"
+                && document.getElementById('img3').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part3x1.jpg"
+                && document.getElementById('img4').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part4x1.jpg"
+                && document.getElementById('img5').src === "https://demo.codegym.vn/8/puzzlegame/img/monkey_part5x1.jpg")) {
+            document.getElementById("done").style.backgroundColor = "yellow";
+        }
+    }
+    </script>
+<style>
+    img{
+        display: block;
+        box-shadow: 2px 3px 3px black;
+        width: 600px;
+        height: 150px;
+    }
+    #done {
+        display: flex;
+        flex-direction: column;
+    }
+</style>
 </body>
 </html>
