@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = ['Bắt đầu'];
+    let a = parseInt(prompt('Nhập số V'));
+    for (let i = 1 ; i <= 10 ; i++)
+    {
+        num[i] = prompt('Nhập số thứ ' + i);
+        if(a == num[i])
+        {
+            num.splice(i,1);
+        }
+    }
+    document.write(num);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = [10];
+  let tong = 0;
+  for (let i = 1 ; i <= 10 ; i++)
+  {
+    num[i] = prompt('Nhập số thứ ' + i);
+    document.write('Số thứ ' + i + ' là: ' + num[i] + '<br>');
+    if (num[i] < 0)
+    {
+      tong++;
+    }
+  }
+  document.write('Có ' + tong + ' số nguyên âm trong mảng');
+</script>
+</body>
+</html>

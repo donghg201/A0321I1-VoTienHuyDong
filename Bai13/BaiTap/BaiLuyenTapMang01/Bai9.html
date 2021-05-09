@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var array1 =[]
+  for (let i = 1 ; i <= 10 ; i++)
+  {
+    array1[i] = prompt('Nhập số thứ ' + i);
+  }
+  var array2 =[]
+  for ( j = 1 ; j <= 10 ; j++)
+  {
+    array2[j] = prompt('Nhập số thứ ' + j);
+  }
+  var array3 = array1.concat(array2);
+  document.write(array3);
+</script>
+</body>
+</html>
