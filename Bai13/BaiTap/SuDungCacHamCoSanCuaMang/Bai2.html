@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = prompt('Nhập số phần tử của chuỗi');
+  let array =[];
+  for (let i = 1; i <= a ; i++)
+  {
+    array[i]= prompt('Nhập giá trị phần tử thứ ' + i + ' là: ');
+    if((array[i-1] % 2 == 0) && (array[i] % 2 == 0))
+    {
+      document.write('-'+array[i]);
+    }else
+    document.write(array[i]);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <div class="vietnamese">
+        <label>Tiếng Việt</label>
+        <input class="input" type="text">
+        <input onclick="result()" value="Search" type="button">
+    </div>
+    <div class="english">
+        <label>Dịch sang Tiếng Anh</label>
+        <input id="result" style="margin: 20px 30px;">
+    </div>
+<script>
+    let english = ["one", "two", "three", "four", "five", "sex","seven","eight","nine","ten"];
+    let vietnamese = ["một", "hai", "ba", "bốn", "năm", "sau","bảy","tám","chín","mười"];
+
+    function result() {
+        let text = document.querySelector("input").value.toLowerCase();
+        let check = false;
+        for (let i = 0; i < vietnamese.length; i++) {
+            if (text == vietnamese[i].toLowerCase()) {
+                check = true;
+                document.getElementById("result").value = english[i];
+                break;
+            }
+        }
+        if (!check) {
+            document.getElementById("result").value = "Không thấy";
+        }
+    }
+
+    function changeLanguage() {
+
+    }
+
+</script>
+</body>
+</html>
