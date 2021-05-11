@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function find()
+  {
+    let arr = [];
+    let a = parseInt(prompt('Nhập số phần tử của mảng'));
+    for(let i = 1; i <= a; i++)
+    {
+      arr[i] = prompt('Nhập giá trị của phần tử thứ ' + i + ' là: ');
+    }
+    let b = prompt('Nhập phần tử cần tìm');
+    let count = 0;
+    for (let j = 1; j <= a; j++)
+    {
+      if (b == arr[j])
+      {
+        count++;
+      }
+    }
+    if (count == 0) {
+      alert('Không có giá trị phần tử cần tìm');
+    } else alert('Giá trị ' + b + ' xuất hiện ' + count + ' lần');
+  }
+  find();
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="input">
+<input onclick="footToMeter()" type="button" id="fsangm" value="F sang M">
+<input onclick="meterToFoot()" type="button" id="msangf" value="M sang F">
+<div> Kết quả là: </div>
+<div id='ketqua'></div>
+<script>
+  function footToMeter(foot)
+  {
+    let f = parseInt(document.getElementById('input').value);
+    kq = f * 0.305;
+    document.getElementById('ketqua').innerHTML=kq;
+  }
+  function meterToFoot(meter)
+  {
+    let m = parseInt(document.getElementById('input').value);
+    kq = m * 3.279;
+    document.getElementById('ketqua').innerHTML=kq;
+  }
+</script>
+</body>
+</html>

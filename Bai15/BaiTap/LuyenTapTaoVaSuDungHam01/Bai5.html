@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    function result()
+    {
+        var a = prompt('Nhập tên ngôi sao cần tìm');
+        if (arr1.indexOf(a) == -1)
+        {
+            alert('Không có ngôi sao cần tìm');
+        }else alert(arr2[arr1.indexOf(a)]);
+    }
+    result();
+</script>
+</body>
+</html>
