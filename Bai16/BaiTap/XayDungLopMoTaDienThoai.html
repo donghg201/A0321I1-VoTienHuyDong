@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="range" id="checkonoff" Name="Kiêm tra" value="Off" max="1" min="0">
+
+<p id="kq"></p>
+<script>
+    class Mobile{
+        constructor(bat,tat,kiemtra) {
+            this.on = bat;
+            this.off = tat;
+            this.check = kiemtra;
+        }
+        getOn(){
+            return this.on;
+        }
+        getOff(){
+            return this.off;
+        }
+        setOnOff(){
+            if(document.getElementById('checkonoff').value == 0)
+            {
+                alert("Điện thoại đang tắt");
+            }else alert("Điện thoại đang bật");
+        }
+    }
+    class Iphone extends Mobile{
+        constructor(bat,tat,kiemtra,pin) {
+            super(this.on,this.off,this.check)
+        }
+    }
+</script>
+</body>
+</html>

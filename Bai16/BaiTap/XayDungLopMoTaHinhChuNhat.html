@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="2000" height="1000" style="border:1px solid #c3c3c3;">
+<script>
+    class Rectangle {
+        constructor(dai, rong) {
+            this.dai = dai;
+            this.rong = rong;
+        }
+        getDai()
+        {
+            return this.dai;
+        }
+        getRong()
+        {
+            return this.rong;
+        }
+        setDai(cdai)
+        {
+            this.dai = cdai;
+        }
+        setRong(crong)
+        {
+            this.rong = crong;
+        }
+        setDaiRong(dai, rong)
+        {
+            this.dai = dai;
+            this.rong = rong;
+        }
+    }
+    let hinhchunhat = new Rectangle(2, 1);
+    let chieudai = hinhchunhat.getDai();
+    let chieurong = hinhchunhat.getRong();
+    alert('Hình chữ nhật có chiều dài là ' + chieudai + 'cm và rộng là ' + chieurong + 'cm');
+    hinhchunhat.setDai(4);
+    chieudai = hinhchunhat.getDai();
+    alert('Hình chữ nhật có chiều dài là ' + chieudai + 'cm và rộng là ' + chieurong + 'cm');
+    hinhchunhat.setRong(2);
+    chieurong = hinhchunhat.getRong();
+    alert('Hình chữ nhật có chiều dài là ' + chieudai + 'cm và rộng là ' + chieurong + 'cm');
+    hinhchunhat.setDaiRong(6,4);
+    chieudai = hinhchunhat.getDai();
+    chieurong = hinhchunhat.getRong();
+    alert('Hình chữ nhật có chiều dài là ' + chieudai + 'cm và rộng là ' + chieurong + 'cm');
+    let c = document.getElementById("myCanvas");
+    let ctx = c.getContext("2d");
+    ctx.fillStyle = "#0fe5dd";
+    ctx.fillRect(0,0,chieudai*100,chieurong*100);
+</script>
+</body>
+</html>
