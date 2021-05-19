@@ -5,34 +5,85 @@
     <title>Title</title>
 </head>
 <body>
-<input type="range" id="checkonoff" Name="Kiêm tra" value="Off" max="1" min="0">
-
-<p id="kq"></p>
+<div>
+    <input type="text" id="samSung"  style="height: 40px;width: 300px;">
+    <input type="button" value="Send" onclick="send('samSung')">
+    <input type="button" value="show" onclick="show('samSung')">
+    <input type="button" value="On/Off" onclick="onOff('samSung')">
+</div>
+<div>
+    <input type="text" id="nokia" style="height: 40px;width: 300px">
+    <input type="button" value="Send" onclick="send('nokia')">
+    <input type="button" value="show" onclick="show('nokia')">
+    <input type="button" value="On/Off" onclick="onOff('nokia')">
+</div>
 <script>
-    class Mobile{
-        constructor(bat,tat,kiemtra) {
-            this.on = bat;
-            this.off = tat;
-            this.check = kiemtra;
+    class DienThoai {
+        constructor() {
+            this.trangThai="On";
+            this.pin=10;
+            this.tinSoan="";
+            this.tinDaGui="";
+            this.tinNhan="";// tin nhận
         }
-        getOn(){
-            return this.on;
+        batTat(){
+            if(this.trangThai=="On"){
+                this.trangThai ="Off"
+            }else {
+                this.trangThai ="On"
+            }
         }
-        getOff(){
-            return this.off;
+        sac(){
+            this.pin=100;
         }
-        setOnOff(){
-            if(document.getElementById('checkonoff').value == 0)
-            {
-                alert("Điện thoại đang tắt");
-            }else alert("Điện thoại đang bật");
+        getTrangThai(){
+            return this.trangThai;
+        }
+        // soạn tin nhắn
+        soanTinNhan(text){
+            this.tinSoan=text;
+            this.pin--;
+        }
+        // nhận tin nhắn
+        nhanTinNhan(text){
+            this.tinNhan= text;
+            this.pin--;
+        }
+        // gửi tin nhăn
+        guiTinNhan(dienThoai, text){
+            this.soanTinNhan(text);
+            this.tinDaGui=this.tinSoan;
+            this.tinSoan="";
+            dienThoai.nhanTinNhan(this.tinDaGui)
+            this.pin--;
+        }
+        hienThiTinNhanDen(){
+            return this.tinNhan;
         }
     }
-    class Iphone extends Mobile{
-        constructor(bat,tat,kiemtra,pin) {
-            super(this.on,this.off,this.check)
+    let nokia = new DienThoai();
+    let samsung = new DienThoai();
+function send(dienThoai) {
+    if(dienThoai=="samSung"){
+        let tinNhan=document.getElementById("samSung").value;
+        samsung.guiTinNhan(nokia,tinNhan);
+        document.getElementById("samSung").value="tin của bạn đã gửi";
+        document.getElementById("nokia").value="bạn có tin nhăn mới";
+    }else {
+        let tinNhan=document.getElementById("nokia").value;
+        nokia.guiTinNhan(samsung,tinNhan);
+        document.getElementById("nokia").value="tin của bạn đã gửi";
+        document.getElementById("samSung").value="bạn có tin nhăn mới";
+    }
+}
+    function show(dienThoai) {
+        if(dienThoai=="samSung"){
+            document.getElementById("samSung").value=samsung.hienThiTinNhanDen();
+        }else {
+            document.getElementById("nokia").value=nokia.hienThiTinNhanDen();
         }
     }
 </script>
 </body>
 </html>
+
