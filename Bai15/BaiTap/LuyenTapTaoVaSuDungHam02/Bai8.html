@@ -6,18 +6,18 @@
 </head>
 <body>
 <script>
-  let arr = [];
-  let a = parseInt(prompt('Nhập số phần tử trong mảng'));
-  for (let i = 1; i <= a; i++)
-  {
-    arr[i] = prompt('Nhập phần tử thứ ' + i);
-    document.write('Phần tử thứ 1 là: ' + arr[i] + '<br>');
-  }
-  function doi()
+  // let arr = [];
+  // let a = parseInt(prompt('Nhập số phần tử trong mảng'));
+  // for (let i = 1; i <= a; i++)
+  // {
+  //   arr[i] = prompt('Nhập phần tử thứ ' + i);
+  //   document.write('Phần tử thứ 1 là: ' + arr[i] + '<br>');
+  // }
+  function doi(arr)
   {
     document.write('Mảng sau khi đảo ngược là: ' + arr.reverse());
   }
-  doi();
+  doi([7,2,5,4,8,3]);
 </script>
 </body>
 </html>

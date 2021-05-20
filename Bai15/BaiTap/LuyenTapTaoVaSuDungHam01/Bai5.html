@@ -6,17 +6,18 @@
 </head>
 <body>
 <script>
-    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
-    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
-    function result()
+    function result(a)
     {
-        var a = prompt('Nhập tên ngôi sao cần tìm');
+        let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        // var a = prompt('Nhập tên ngôi sao cần tìm');
+        var a;
         if (arr1.indexOf(a) == -1)
         {
             alert('Không có ngôi sao cần tìm');
         }else alert(arr2[arr1.indexOf(a)]);
     }
-    result();
+    result('Polaris');
 </script>
 </body>
 </html>
