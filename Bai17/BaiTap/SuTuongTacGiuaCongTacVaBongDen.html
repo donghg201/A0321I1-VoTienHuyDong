@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Den {
+        constructor(status) {
+            this.status = false;
+        }
+        turnOn(){
+            this.status = true;
+            console.log('Đèn đang bật');
+        }
+        turnOff(){
+            this.status = false;
+            console.log('Đèn đang tắt')
+        }
+    }
+    var den = new Den(false)
+    for (let i = 0; i < 10; i++) {
+        den.turnOn();
+        den.turnOff();
+    }
+</script>
+</body>
+</html>
