@@ -8,15 +8,14 @@
 <script>
     function chuanhoa(){
         let a = prompt('Nhập xâu cần chỉnh');
-        let b = a.trim();
-        let c = b.toLowerCase();
-        for (let i = 0; i < c.length-1; i++)
-        {
-            if(c[i] == ' ' && c[i+1] == ' ')
-            {
-                c.split()
-            }
-        }
+        a = a.trim();
+        a = a.toLowerCase();
+        //Để thay thế toàn bộ thì dùng /*Nội dung*/g
+        let b = a.replace(/  /g,' ');
+        //Tham khảo mạng :>
+        let c = b.toLowerCase().split(' ').map(function(Word) {
+            return Word[0].toUpperCase() + Word.substr(1);
+        }).join(' ');
         alert(c);
     }
     chuanhoa();
